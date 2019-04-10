@@ -1,0 +1,13 @@
+version: '3.7'
+services: 
+  rabbitmq:
+    container_name: rabbitmq
+    hostname: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "4369:4369"
+      - "5672:5672"
+      - "15672:15672"
+      - "25672:25672"
+    volumes:
+      - ./rabbit_data: 

@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel="stylesheet", href="/static/stylesheets/style.css")
+  body
+    h1= heading
+    ul
+        for message in messages
+            li= message

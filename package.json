@@ -1,0 +1,24 @@
+{
+  "name": "rabbit",
+  "version": "0.0.0",
+  "private": true,
+  "description": "rabbitmq node example",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon ./server.js",
+    "docker:run": "docker run -d --rm -p 5671:5671 -p 5672:5672 -p 15672:15672 --hostname some_rabbit --name rabbit rabbitmq:3-management",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "pug": "^2.0.3"
+  },
+  "author": "Daniel Hava",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
